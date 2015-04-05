@@ -1,7 +1,7 @@
 class GitSmb < Formula
   homepage "https://github.com/pascaldevink/git-smb"
-  url "https://github.com/pascaldevink/git-smb/archive/1.0.2.tar.gz"
-  sha256 "53820a5c11e43899c7c2abcd432b6c24e0719d36067e3a119cac5afce91a7baa"
+  url "https://github.com/pascaldevink/git-smb/archive/1.1.tar.gz"
+  sha256 "7452427a44d47a0b722c8b0007a2fc8b6aa27eedfacda2c8f74c104c78ee980a"
 
   head "https://github.com/pascaldevink/git-smb.git", :branch => "master"
 
@@ -12,6 +12,8 @@ class GitSmb < Formula
     bin.mkpath
     bin.install "bin/git-smb"
     share.install "share/data"
+    mkdir_p etc/"git-smb"
+    mv "etc/config.json", etc/"git-smb/config.json"
   end
 
   test do
