@@ -1,7 +1,7 @@
 class GitSmb < Formula
   homepage "https://github.com/pascaldevink/git-smb"
-  url "https://github.com/pascaldevink/git-smb/archive/1.1.tar.gz"
-  sha256 "7452427a44d47a0b722c8b0007a2fc8b6aa27eedfacda2c8f74c104c78ee980a"
+  url "https://github.com/pascaldevink/git-smb/archive/1.2.tar.gz"
+  sha256 "b6457516136197169427f701274fa6787f0b1013ed30684100f98909f7ef3d89"
 
   head "https://github.com/pascaldevink/git-smb.git", :branch => "master"
 
